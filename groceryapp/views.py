@@ -172,8 +172,8 @@ def registration(request):
             username=email, first_name=fname, last_name=lname, email=email, password=password)
         UserProfile.objects.create(
             user=user, mobile=mobile, address=address, image=image)
-        messages.success(request, "Registeration Successfully")
-    return render(request, 'login.html', locals())
+        messages.success(request, "Registration Successfully")
+    return render(request, 'registration.html', locals())
 
 
 def userlogin(request):
