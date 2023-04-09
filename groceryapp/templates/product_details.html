@@ -84,14 +84,14 @@
                          <img src="{{i.image.url}}">
                          </a>
                       </div>
-                      <h4 class="mb-1"> <a href="details.php"> {{i.name}} </a> </h4>
+                      <h4 class="mb-1"> <a href="/product-detail/{{i.id}}"> {{i.name}} </a> </h4>
                       <div class="price-box mb-2">
                          <span class="price"> Price <i class="fa fa-inr"></i> {{i.price}} </span>
                          <span class="offer-price"> Offer Price <i class="fa fa-inr"></i> 
                             {{i.id|applydiscount}} </span>
                       </div>
                       <div class="btn-box text-center">
-                         <a class="btn btn-sm" href="javascript:void(0);"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
+                         <a class="btn btn-sm" href="/add-to-cart/{{i.id}}/"> <i class="fa fa-shopping-cart"></i> Add to Cart </a>
                       </div>
                    </div>
                 </div>
